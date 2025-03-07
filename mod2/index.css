@@ -1,63 +1,36 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 2.25em; /* 75% larger than default */
-    margin-bottom: 20px;
-}
-
-.section-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* Spacing between sections */
-}
-
-.section {
-    border: 1px solid black;
-    padding: 20px;
-    position: relative;
-    background-color: #f0f0f0; /* Light gray background */
-}
-
-/* Section title styles */
-.section-title {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #ffcc00; /* Yellow background for title */
-    padding: 5px;
-    border: 1px solid black;
-    font-size: 1.25em; /* 25% larger than default */
-}
-
-/* Desktop view */
-@media (min-width: 992px) {
-    .section {
-        width: 32%; /* Each section takes up equal space */
-    }
-}
-
-/* Tablet view */
-@media (min-width: 768px) and (max-width: 991px) {
-    .section {
-        width: 48%; /* First two sections take up equal space */
-    }
-    .section:nth-child(3) {
-        width: 100%; /* Third section takes full width */
-    }
-}
-
-/* Mobile view */
-@media (max-width: 767px) {
-    .section {
-        width: 100%; /* Each section takes full width */
-    }
-}
+ .body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+        .menu-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .menu-item {
+            background-color: #808080;
+            padding: 20px;
+            width: 250px;
+            border: 2px solid black;
+            text-align: left;
+            position: relative;
+        }
+        .menu-header {
+            position: absolute;
+            top: -12px;
+            left: 10px;
+            padding: 5px 10px;
+            font-weight: bold;
+        }
+        .chicken {
+            background-color: #f4a5a5;
+        }
+        .beef {
+            background-color: #d9534f;
+            color: white;
+        }
+        .sushi {
+            background-color: #f7e28b;
+        }
